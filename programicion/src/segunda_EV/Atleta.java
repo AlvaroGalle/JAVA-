@@ -1,27 +1,27 @@
 package segunda_EV;
 
-public class Atleta {
+public class Atleta implements acciones {
 private String dni="";
 private String nombre="";
 private int year;
 private float altura;
 private float peso;
 private boolean estudios;
-public enum sexo{M, F, X}
-private sexo genero;
+/*public enum sexo{M, F, X}
+private sexo genero;*/
 ///////////////////////////////////////////////////////////
 /*public Atleta() {
 	
 }//constructor*/
 ///////////////////////////////////////////////////////////
-public Atleta(String newdni, String newnombre, int newYear, float newaltura, float newpeso, boolean newestudio, sexo newgenero){
+public Atleta(String newdni, String newnombre, int newYear, float newaltura, float newpeso, boolean newestudio/*, sexo newgenero*/){
 	this.nombre=newnombre;
 	this.dni=newdni;
 	this.year=newYear;
 	this.altura=newaltura;
 	this.peso=newpeso;
 	this.estudios=newestudio;
-	this.genero=newgenero;
+	/*this.genero=newgenero;*/
 }//Constructor Con campos
 ////////////////////////////////////////////////////////////
  public void setNombre(String newnombre) {
@@ -38,7 +38,7 @@ public Atleta(String newdni, String newnombre, int newYear, float newaltura, flo
  
  public void setAltura(float newaltura) {
 	 this.altura=newaltura;
- }//setaltura
+ }//setAltura
  
  public void setPeso(float newpeso) {
 	 this.peso=newpeso;
@@ -50,4 +50,15 @@ public Atleta(String newdni, String newnombre, int newYear, float newaltura, flo
 public String toString() {
 	return nombre + " DNI: ******" +/*tresdni+dosdni+unodni+letradni +*/dni+ " " +year +" "+ altura+ "cm "+peso+ "kg "+"estudiante: "+ estudios ;
 }//OverrrtoString
+
+@Override
+public int correr() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+@Override
+public int parar() {
+	// TODO Auto-generated method stub
+	return 0;
+}
 }//class

@@ -1,5 +1,6 @@
 package segunda_EV;
 import java.util.Scanner;
+import java.util.Arrays;
 public class AtletaMain {
 
 	public static void main(String[] args) {
@@ -45,7 +46,7 @@ public class AtletaMain {
 				}//else
 			}//while
 			enum sexo{M, F, X}
-			sexo genero=sexo.X;
+			/*sexo genero=sexo.X;
 			while (exit==0) {
 				System.out.println("Sexo del atleta (M/F/X)");
 				scChar=sc.next().charAt(0);
@@ -58,11 +59,13 @@ public class AtletaMain {
 				if (scChar=='X') {
 					genero=sexo.X;
 				}//if_X
-			}//while
-			atl[x]=new Atleta(dni,nom,year,altura,peso,est,genero);
+			}//while*/
+			atl[x]=new Atleta(dni,nom,year,altura,peso,est/*,genero*/);
+			
 		}//for
 		System.out.println(atl[0].toString());
 		sc.close();
+		Arrays.sort(atl);	
 	}//main
 
 }//class

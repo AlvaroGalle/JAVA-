@@ -13,6 +13,8 @@ public interface acciones {
 	public void sort() {
 		if 
 	}//sort
-	
+	//afdispugasdlijbvdlasibliudsgiusagh
+	//pijfagbñgaiubvgña
+	//ñkgjrb´`agbd
 	
 }//interface
